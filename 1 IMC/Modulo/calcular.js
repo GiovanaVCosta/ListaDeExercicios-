@@ -25,34 +25,34 @@ const statusIMC = function(valorIMC) {
 
     if (valorstatus < 18.5) {
 
-        mensagem = 'Abaixo do peso adequado'
+        mensagem = 'abaixo do peso adequado'
 
     } else if (valorstatus >= 18.5 && valorstatus <= 24.9) {
 
-        mensagem = 'Peso adequado'
+        mensagem = 'peso adequado'
 
     } else if (valorstatus >= 25 && valorstatus <= 29.9) {
 
-        mensagem = 'Sobrepeso'
+        mensagem = 'sobrepeso'
 
     } else if (valorstatus >= 30 && valorstatus <= 34.9) {
 
-        mensagem = 'Obesidade 1'
+        mensagem = 'obesidade 1'
 
     } else if (valorstatus >= 35 && valorstatus <= 39.9) {
 
-        mensagem = 'Obesidade 2'
+        mensagem = 'obesidade 2'
 
     } else if (valorstatus >= 40) {
 
-        mensagem = 'Obesidade 3'
+        mensagem = 'obesidade 3'
     }
 
     return mensagem
 }
 
 
-module.export = {
+module.exports = {
     calcular,
     statusIMC
 }

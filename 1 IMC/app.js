@@ -13,16 +13,16 @@ var entradaDeDados = readline.createInterface({
     output: process.stdout
 })
 
-entradaDeDados.question('Digite seu peso:', function(peso) {
+entradaDeDados.question('Digite seu peso: ', function(peso) {
     let valorpeso = peso;
-    entradaDeDados.question('Digite sua altura', function(altura) {
+    entradaDeDados.question('Digite sua altura: ', function(altura) {
         let valoraltura = altura;
 
-        var mostrarIMC = (calculo.calcular(peso, altura));
+        let mostrarIMC = calculo.calcular(peso, altura);
 
-        var mostrarStatus = (calculo.statusIMC(valorIMC));
+        let mostrarStatus = calculo.statusIMC(mostrarIMC);
 
-        console.log(mostrarIMC + ', ' + mostrarStatus)
+        console.log(mostrarIMC + ' , ' + mostrarStatus)
 
         entradaDeDados.close()
     })
